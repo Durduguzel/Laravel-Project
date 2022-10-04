@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usersController;
+use App\Http\Controllers\pagesController;
+
 
 
 /*
@@ -63,6 +65,28 @@ use App\Http\Controllers\usersController;
 //     return view('iletisim');
 // });
  
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+// Route::get('about', function(){
+//     return view('pages.about');
+// });
+// Route::get('home', function(){
+//     return view('pages.home');
+// });
+// Route::get('contact', function(){
+//     return view('contact.contact');
+// });
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('home', [pagesController::class, 'home']);
+// Route::get('about', [pagesController::class, 'about']);
+// Route::get('contact', [pagesController::class, 'contact']);
+// Route::get('students', [pagesController::class, 'students']);
+
+// Route::get('/form', function () {
+//     return view('form');
+// });

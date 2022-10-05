@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usersController;
 use App\Http\Controllers\pagesController;
+use App\Http\Controllers\OrdersController;
 
 
 
@@ -90,3 +91,5 @@ use App\Http\Controllers\pagesController;
 // Route::get('/form', function () {
 //     return view('form');
 // });
+
+Route::get('orders',[OrdersController::class, 'index']);

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usersController;
 use App\Http\Controllers\pagesController;
 use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\TestsController;
 
 
 
@@ -92,4 +93,11 @@ use App\Http\Controllers\OrdersController;
 //     return view('form');
 // });
 
-Route::get('orders',[OrdersController::class, 'index']);
+// Route::get('orders',[OrdersController::class, 'index']);
+
+Route::get('create', [TestsController::class, 'create']);
+Route::get('createNew', [TestsController::class, 'createNew']);
+Route::get('read', [TestsController::class, 'read']);
+Route::get('edit/{id}', [TestsController::class, 'edit']);
+Route::get('update/{id}', [TestsController::class, 'update']);
+Route::get('delete/{id}', [TestsController::class, 'delete']);

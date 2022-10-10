@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Order extends Model
+class Billing extends Model
 {
-    
+    protected $table = 'billings';
+    protected $guarded = [];
 }
